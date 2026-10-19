@@ -1,0 +1,21 @@
+tag_plc,tipo_plc,sentido,senal_mcd,tipo_mcd,unidades,descripcion
+Eje_Banda_Posicion_Actual,REAL,PLC->MCD,Banda_Posicion,double,cm,Copia de Eje_Banda.ActualPosition (informativa)
+Eje_Banda_Velocidad_Actual,REAL,PLC->MCD,Banda_Velocidad,double,cm/s,Copia de Eje_Banda.ActualVelocity; mueve la superficie de transporte del gemelo
+Eje_X_Posicion_Actual,REAL,PLC->MCD,X_Posicion,double,cm,Copia de Eje_X.ActualPosition; mueve la junta del carro X (convertir a mm si el modelo lo requiere)
+Eje_Y_Posicion_Actual,REAL,PLC->MCD,Y_Posicion,double,cm,Copia de Eje_Y.ActualPosition; mueve la junta del cabezal Y
+Servos_Habilitados,BOOL,PLC->MCD,Servos_Habilitados,bool,-,1 si los tres ejes tienen ServoActionStatus = 1
+Aplicar_Pegante,BOOL,PLC->MCD,Aplicar_Pegante,bool,-,Ventana de pegante activa; el gemelo puede cambiar el color del cabezal
+Mando_Gemelo_Activo,BOOL,PLC->MCD,Mando_Activo,bool,-,1 si el PAC acepta ordenes del gemelo (modo manual habilitado y comunicacion OK)
+PLC_Latido,BOOL,PLC->MCD,PLC_Latido,bool,-,Bit que el PAC alterna periodicamente; el gemelo lo devuelve en NX_Latido
+NX_Latido,BOOL,MCD->PLC,NX_Latido,bool,-,Eco de PLC_Latido; si deja de seguirlo el PAC detiene los movimientos mandados por el gemelo
+NX_Sensor_Caja,BOOL,MCD->PLC,Sensor_Caja,bool,-,Sensor de colision del gemelo en la posicion del sensor real
+NX_Solicitud_Mando,BOOL,MCD->PLC,Solicitud_Mando,bool,-,El usuario del gemelo pide el modo de mando manual
+NX_Jog_Adelante_Banda,BOOL,MCD->PLC,Jog_Adelante_Banda,bool,-,Solicitud de jog positivo de la banda
+NX_Jog_Atras_Banda,BOOL,MCD->PLC,Jog_Atras_Banda,bool,-,Solicitud de jog negativo de la banda
+NX_Vel_Banda,REAL,MCD->PLC,Vel_Banda,double,cm/s,Velocidad solicitada para la banda; el PAC la limita
+NX_Jog_Adelante_X,BOOL,MCD->PLC,Jog_Adelante_X,bool,-,Solicitud de jog positivo del eje X
+NX_Jog_Atras_X,BOOL,MCD->PLC,Jog_Atras_X,bool,-,Solicitud de jog negativo del eje X
+NX_Vel_X,REAL,MCD->PLC,Vel_X,double,cm/s,Velocidad solicitada para X; el PAC la limita
+NX_Jog_Adelante_Y,BOOL,MCD->PLC,Jog_Adelante_Y,bool,-,Solicitud de jog positivo del eje Y
+NX_Jog_Atras_Y,BOOL,MCD->PLC,Jog_Atras_Y,bool,-,Solicitud de jog negativo del eje Y
+NX_Vel_Y,REAL,MCD->PLC,Vel_Y,double,cm/s,Velocidad solicitada para Y; el PAC la limita
