@@ -83,8 +83,9 @@ LAM-UN/
 
 ## Equipo docente y créditos
 
-- **Profesor:** Víctor Hugo Grisales Palacio, director del Laboratorio de Automatización de Máquinas ([vhgrisalesp@unal.edu.co](mailto:vhgrisalesp@unal.edu.co)).
-- **Monitor:** Jorge Nicolás Garzón Acevedo.
+- **Profesor:** Ing. Víctor Hugo Grisales Palacio, director del Laboratorio de Automatización de Máquinas ([vhgrisalesp@unal.edu.co](mailto:vhgrisalesp@unal.edu.co)).
+- **Monitor:** Ing. Jorge Nicolás Garzón Acevedo.
+- **Monitor:** Ing. Brayan Cufiño.
 - **Material base:**
   - *Guías para Control de Movimiento de Servomecanismos usando la Plataforma Industrial CompactLogix de Allen Bradley* (2015). Autores: Edgar Hernando Sepúlveda Oviedo, David Andrés Sáenz Ardila, Kevin Andrés Pulido y Víctor Hugo Grisales Palacio.
   - *Guía de Box Forming Motion Control Project* (actualización 2023). Autores: Heriberto Forero Correa y Víctor Hugo Grisales Palacio.
